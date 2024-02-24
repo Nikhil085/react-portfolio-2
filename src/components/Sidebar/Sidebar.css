@@ -1,0 +1,73 @@
+.aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--body-color);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 2.5rem;
+    width: 110px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.nav__link {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    transition: .3s;
+    fill: aqua;
+}
+
+.nav__link:hover lord-icon {
+    fill: blue; 
+}
+
+.copyright {
+    color: hsl(245, 15%, 65%);
+    font-size: var(--small-font-size);
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+}
+
+.nav__toggle {
+    position: fixed;
+    top: 1.25rem;
+    left: 1.875rem;
+    cursor: pointer;
+    height: 40px;
+    width: 45px;
+    background-color: var(--body-color);
+    border: 1px solid #c8dfec;
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .aside {
+        margin-left: -110px;
+       
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .nav__list {
+        flex-direction: column; /* Change direction to row for smaller screens */
+        column-gap: 1rem; /* Add gap between links */
+    }
+
+    .nav__link {
+        font-size: 1rem; /* Reduce font size for smaller screens */
+    }
+
+    .nav__toggle {
+        display: none; /* Hide the toggle button for smaller screens */
+    } 
+}
