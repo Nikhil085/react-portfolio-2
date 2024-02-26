@@ -27,7 +27,6 @@ const Pdata = [
       category: "Creative",
       url:"https://github.com/Nikhil085/Animated-features-designs.git"
     },
-    ,
     {
       id: 4,
       image: Work4,
@@ -35,7 +34,6 @@ const Pdata = [
       category: "Creative",
       url:"https://animaxstudio.netlify.app/"
     },
-    ,
     {
       id: 5,
       image: Work5,
@@ -43,14 +41,13 @@ const Pdata = [
       category: "Creative",
       url:"https://nikhilreactportfolio.netlify.app/"
     },
-    ,
     {
       id: 6,
       image: Work6,
       title: "Task Management",
       category: "Major",
       url:"https://github.com/Nikhil085/Minor1-React.git"
-    },
+    }
   ];
   
 export default Pdata;
