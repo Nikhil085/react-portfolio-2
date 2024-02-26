@@ -1,0 +1,67 @@
+.nav-div {
+    background: rgba(0, 0, 0, 0.4);
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 999;
+    position: fixed; /* Change position to fixed */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2rem; /* Position from the top */
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(25px);
+}
+
+nav a {
+    background: transparent;
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    color: #ffffffa1;
+    transition: all ease-in-out 400ms;
+    transform: scale(1);
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transform: scale(1.2);
+}
+
+nav a.active {
+    color: #fff;
+}
+
+.tips {
+    position: absolute;
+    font-size: 12px;
+    bottom: 1rem;
+    right: 0.1rem;
+    left: 1px;
+    top: -37px;
+    background-color: black;
+    height: 1.5rem;
+    width: 2.7rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: all ease-in-out 400ms;
+    opacity: 0;
+}
+
+.tips:hover .nav a {
+    bottom: 3.5rem;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-div {
+        bottom: 2rem; /* Position from the bottom */
+        top: auto; /* Remove the top position */
+        transform: translateX(-50%);
+    }
+    .tips {
+        bottom: auto;
+        top: 1rem;
+    }
+}

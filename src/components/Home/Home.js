@@ -24,6 +24,7 @@ function Home() {
     <section className='home container' id='home'>
         <div className='intro'>
             <img src={Me} title='View Image' alt='' onClick={handleZoomIn} className='home__img' />
+            <p className='hello'>Hello I'M</p>
             <h1 className='home__name'>Nikhil Mahajan</h1>
             <span className='home__education'>I'm a Frontend Developer</span>
             <Social/>

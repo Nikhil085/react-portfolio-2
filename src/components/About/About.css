@@ -1,41 +1,43 @@
-.about__container{
+.about__container {
+    display: grid;
     grid-template-columns: 2fr 6fr;
     column-gap: 1.875rem;
     align-items: center;
-}
-.section__title{
+  }
+  
+  .section__title {
     text-align: center;
-}
-
-.about__img{
+  }
+  
+  .about__img {
     border-radius: 50%;
-    transition: all ease .3s; 
+    transition: all ease 0.3s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    cursor: pointer; 
-}
-
-.about__img:hover{
+    cursor: pointer;
+  }
+  
+  .about__img:hover {
     border: 1px solid rgba(130, 129, 129, 0.525);
     transform: scale(1.03);
-}
-
-.about__data{
+  }
+  
+  .about__data {
     padding: 1.875rem;
     background-color: var(--container-color);
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
     gap: 1rem;
-    
-}
-
-.about__info{
+  }
+  
+  .about__info {
     text-transform: capitalize;
-}
-.btn{
-  margin-top: 1.5rem;
-}
-
-.zoom-in {
+  }
+  
+  .btn {
+    margin-top: 1.5rem;
+  }
+  
+  .zoom-in {
     position: fixed;
     top: 0;
     left: 0;
@@ -53,20 +55,40 @@
     max-width: 90%;
     max-height: 90%;
     border-radius: 5px;
-    cursor: pointer; 
+    cursor: pointer;
   }
-
+  
   @media screen and (max-width: 1024px) {
-    .about__container{
-        grid-template-columns: 720px;
-        justify-content: center;
-        row-gap: 1.875rem;
+    .about__container {
+      grid-template-columns: 720px; /* Adjust as needed */
+      justify-content: center;
+      row-gap: 1.875rem;
     }
-    .about__img{
-        justify-self: center;
-        width: 200px;
+  
+    .about__img {
+      justify-self: center;
+      width: 200px; /* Adjust as needed */
     }
-    .about__info{
-        text-align: center;
+  
+    .about__info {
+      text-align: center;
     }
   }
+  
+  @media screen and (max-width: 768px) {
+    .about__container {
+      grid-template-columns: 1fr; /* Single column layout */
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .about__img {
+      width: 150px; /* Adjust as needed */
+    }
+  
+    .about__data {
+      padding: 1rem; /* Adjust as needed */
+    }
+  }
+  
+  
