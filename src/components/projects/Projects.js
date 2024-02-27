@@ -18,7 +18,7 @@ function Projects () {
 
 
   return (
-    <section className='work container section' id='work'>
+    <section className='work container section' id='work-section'>
           <h2 className='section__title'>Recent Works</h2>
           <div className='work__filter'>
             <span className='work__item' onClick={() => setProjects(PData)}>Everything</span>

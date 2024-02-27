@@ -21,7 +21,7 @@ function Home() {
   };
 
   return (
-    <section className='home container' id='home'>
+    <section className='home container' id='home-section'>
         <div className='intro'>
             <img src={Me} title='View Image' alt='' onClick={handleZoomIn} className='home__img' />
             <p className='hello'>Hello I'M</p>

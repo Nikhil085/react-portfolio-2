@@ -5,7 +5,7 @@ import Card from './Card';
 
 function education() {
   return (
-    <section className='education container section ' id='education'>
+    <section className='education container section ' id='education-section'>
         <h2 className='section__title'>Experience</h2>
      <div className='education__container grid'>
         <div className='timeline grid'>
@@ -20,6 +20,7 @@ function education() {
                         />
                     )
                 }
+                return null;
             })}
         </div>
         <div className='timeline grid'>
@@ -34,6 +35,7 @@ function education() {
                         />
                     )
                 }
+                return null;
             })}
         </div>
      </div>

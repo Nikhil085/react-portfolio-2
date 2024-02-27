@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import '../About/About.css';
 import image from '../../assets/Copilot1.png';
 import Resume from '../../assets/Resume.pdf'
@@ -15,7 +15,7 @@ function About() {
 
 
   return (
-    <section className='about container section' id='about'>
+    <section className='about container section' id='about-section'>
          <Backtotop/>
      <h2 className='section__title'>About Me</h2>
      <div className='about__container grid'>

@@ -15,47 +15,46 @@ import Express from '../../assets/express.png';
 
 function Skills() {
   return (
-    <div className='skill__container' id='skills'>
+    <div className='skill__container' id='skills-section'>
         <h3>What Skill I have -</h3>
         <div className='skills'>
-            <a className='skill'>
-                <img title='React' src={Reacticon} alt='react-icon'/>
-            </a>
-            <a className='skill'>
-                <img title='javaScript' src={js} alt='react-icon'/>
-            </a>
-            <a className='skill'>
-                <img title='Node.js' src={node} alt='react-icon'/>
-            </a>
-            <a className='skill'>
-                <img title='Java' src={java} alt='react-icon'/>
-            </a>
-            <a className='skill'>
-                <img title='Mongodb' src={mongo} alt='react-icon'/>
-            </a>
-            <a className='skill'>
-                <img title='MySql' src={mysql} alt='react-icon'/>
-            </a>
-            <a className='skill'>
-                <img title='HTML' src={html} alt='react-icon'/>
-            </a>
-            <a className='skill'>
-                <img title='CSS' src={css} alt='react-icon'/>
-            </a>
-            <a className='skill'>
-                <img title='Bootstrap' src={Bootstrap}/>
-            </a>
-            <a className='skill'>
-                <img title='GSAP' src={gsap}/>
-            </a>
-            <a className='skill'>
-                <img title='express' src={Express}/>
-            </a>
-            <a className='skill'>
-                <img title='Material UI' src={MUI}/>
-            </a>
+            <div className='skill'>
+                <img title='React' src={Reacticon} alt='React icon'/>
+            </div>
+            <div className='skill'>
+                <img title='JavaScript' src={js} alt='JavaScript icon'/>
+            </div>
+            <div className='skill'>
+                <img title='Node.js' src={node} alt='Node.js icon'/>
+            </div>
+            <div className='skill'>
+                <img title='Java' src={java} alt='Java icon'/>
+            </div>
+            <div className='skill'>
+                <img title='MongoDB' src={mongo} alt='MongoDB icon'/>
+            </div>
+            <div className='skill'>
+                <img title='MySQL' src={mysql} alt='MySQL icon'/>
+            </div>
+            <div className='skill'>
+                <img title='HTML' src={html} alt='HTML icon'/>
+            </div>
+            <div className='skill'>
+                <img title='CSS' src={css} alt='CSS icon'/>
+            </div>
+            <div className='skill'>
+                <img title='Bootstrap' src={Bootstrap} alt='Bootstrap icon'/>
+            </div>
+            <div className='skill'>
+                <img title='GSAP' src={gsap} alt='GSAP icon'/>
+            </div>
+            <div className='skill'>
+                <img title='Express' src={Express} alt='Express icon'/>
+            </div>
+            <div className='skill'>
+                <img title='Material UI' src={MUI} alt='Material UI icon'/>
+            </div>
         </div>
-       
     </div>
   )
 }

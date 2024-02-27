@@ -6,7 +6,7 @@
     position: fixed; /* Change position to fixed */
     left: 50%;
     transform: translateX(-50%);
-    top: 2rem; /* Position from the top */
+    top: 37.75rem; /* Position from the top */
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
